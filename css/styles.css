@@ -1,0 +1,47 @@
+/* Associação Pró Família — Estilos customizados */
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+    background-color: #f4faff;
+    color: #003748;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.primary-gradient-btn {
+    background: linear-gradient(135deg, #335f9f 0%, #245392 100%);
+}
+
+.editorial-asymmetry {
+    margin-right: clamp(2rem, 8vw, 120px);
+    margin-left: clamp(2rem, 5vw, 80px);
+}
+
+.glass-nav {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+}
+
+.editorial-shadow {
+    box-shadow: 0 16px 32px -12px rgba(0, 55, 72, 0.06);
+}
+
+.timeline-line {
+    background: linear-gradient(to bottom, transparent, #335f9f 15%, #335f9f 85%, transparent);
+}
+
+.editorial-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.tonal-layering-no-border {
+    border: none !important;
+}
