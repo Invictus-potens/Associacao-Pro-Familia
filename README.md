@@ -53,6 +53,50 @@ Associacao-Pro-Familia/
 - `sobre.html`: história e trajetória da associação
 - `ajuda.html`: formas de contribuir (doação/voluntariado)
 
+## Mapa do site (visual)
+
+```text
+index.html (Início)
+├── sobre.html (Nossa História)
+├── projetos.html (Projetos)
+└── ajuda.html (Como Ajudar)
+```
+
+## Mapa do site (listado e descrito)
+
+1. `index.html` - Início
+	- Hero institucional
+	- Seção da escola e missão
+	- Bloco de iniciativas/notícias
+	- CTA para doação e voluntariado
+
+2. `sobre.html` - Nossa História
+	- Hero da trajetória
+	- Linha do tempo (marcos históricos)
+	- Bloco de valores e identidade
+	- CTA institucional
+
+3. `projetos.html` - Projetos
+	- Cabeçalho de projetos de impacto
+	- Projeto em destaque
+	- Grade de projetos sociais
+	- Bloco de engajamento/newsletter
+
+4. `ajuda.html` - Como Ajudar
+	- Hero de engajamento
+	- Opções e impacto de doação
+	- Oportunidades de voluntariado
+	- Doação de itens e chamada final
+
+### Navegação principal
+
+O menu principal está presente nas quatro páginas e conecta diretamente:
+
+- Início -> `index.html`
+- Nossa História -> `sobre.html`
+- Projetos -> `projetos.html`
+- Como Ajudar -> `ajuda.html`
+
 ## Como executar localmente
 
 Como é um projeto estático, existem duas formas simples:
