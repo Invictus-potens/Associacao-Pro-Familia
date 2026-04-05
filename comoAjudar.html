@@ -1,344 +1,681 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html lang="pt-br"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Como Ajudar — Associação Pró Família</title>
-<meta name="description" content="Saiba como apoiar a Associação Pró Família: doação financeira, voluntariado ou doação de itens para crianças e famílias da Mangueira."/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Lexend:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="css/styles.css" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Como Ajudar — Associação Pró Família</title>
+    <meta
+      name="description"
+      content="Saiba como apoiar a Associação Pró Família: doação financeira, voluntariado ou doação de itens para crianças e famílias da Mangueira."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Lexend:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
-            "colors": {
-                    "error-dim": "#70030f",
-                    "surface-container-highest": "#bde9ff",
-                    "tertiary-fixed": "#91f78e",
-                    "surface": "#f4faff",
-                    "on-surface-variant": "#27667e",
-                    "surface-variant": "#bde9ff",
-                    "on-secondary-container": "#674b41",
-                    "error": "#ac3434",
-                    "tertiary-dim": "#006118",
-                    "surface-container-low": "#e6f6ff",
-                    "tertiary": "#006f1d",
-                    "on-surface": "#003748",
-                    "tertiary-container": "#91f78e",
-                    "secondary": "#75584e",
-                    "on-primary-fixed-variant": "#104583",
-                    "on-secondary-fixed-variant": "#72554b",
-                    "tertiary-fixed-dim": "#83e881",
-                    "secondary-fixed-dim": "#f3ccbf",
-                    "on-tertiary-fixed": "#00480f",
-                    "primary-dim": "#245392",
-                    "on-error-container": "#65000b",
-                    "surface-container": "#d9f2ff",
-                    "primary": "#335f9f",
-                    "background": "#f4faff",
-                    "secondary-dim": "#684d43",
-                    "surface-container-high": "#cbedff",
-                    "on-primary-container": "#003c78",
-                    "outline-variant": "#80bad5",
-                    "on-error": "#fff7f6",
-                    "on-tertiary-fixed-variant": "#00691a",
-                    "surface-bright": "#f4faff",
-                    "secondary-fixed": "#ffdbce",
-                    "primary-fixed-dim": "#8bb4f9",
-                    "inverse-primary": "#88b2f7",
-                    "on-tertiary": "#eaffe2",
-                    "primary-fixed": "#9fc2ff",
-                    "primary-container": "#9fc2ff",
-                    "on-secondary-fixed": "#533930",
-                    "surface-tint": "#335f9f",
-                    "error-container": "#f56965",
-                    "on-primary-fixed": "#002753",
-                    "on-tertiary-container": "#005e17",
-                    "on-background": "#003748",
-                    "inverse-on-surface": "#84a1b0",
-                    "secondary-container": "#ffdbce",
-                    "surface-container-lowest": "#ffffff",
-                    "surface-dim": "#a6e3ff",
-                    "inverse-surface": "#001018",
-                    "outline": "#47829b",
-                    "on-secondary": "#fff7f5",
-                    "on-primary": "#f8f8ff"
+            colors: {
+              "error-dim": "#70030f",
+              "surface-container-highest": "#bde9ff",
+              "tertiary-fixed": "#91f78e",
+              surface: "#f4faff",
+              "on-surface-variant": "#27667e",
+              "surface-variant": "#bde9ff",
+              "on-secondary-container": "#674b41",
+              error: "#ac3434",
+              "tertiary-dim": "#006118",
+              "surface-container-low": "#e6f6ff",
+              tertiary: "#006f1d",
+              "on-surface": "#003748",
+              "tertiary-container": "#91f78e",
+              secondary: "#75584e",
+              "on-primary-fixed-variant": "#104583",
+              "on-secondary-fixed-variant": "#72554b",
+              "tertiary-fixed-dim": "#83e881",
+              "secondary-fixed-dim": "#f3ccbf",
+              "on-tertiary-fixed": "#00480f",
+              "primary-dim": "#245392",
+              "on-error-container": "#65000b",
+              "surface-container": "#d9f2ff",
+              primary: "#335f9f",
+              background: "#f4faff",
+              "secondary-dim": "#684d43",
+              "surface-container-high": "#cbedff",
+              "on-primary-container": "#003c78",
+              "outline-variant": "#80bad5",
+              "on-error": "#fff7f6",
+              "on-tertiary-fixed-variant": "#00691a",
+              "surface-bright": "#f4faff",
+              "secondary-fixed": "#ffdbce",
+              "primary-fixed-dim": "#8bb4f9",
+              "inverse-primary": "#88b2f7",
+              "on-tertiary": "#eaffe2",
+              "primary-fixed": "#9fc2ff",
+              "primary-container": "#9fc2ff",
+              "on-secondary-fixed": "#533930",
+              "surface-tint": "#335f9f",
+              "error-container": "#f56965",
+              "on-primary-fixed": "#002753",
+              "on-tertiary-container": "#005e17",
+              "on-background": "#003748",
+              "inverse-on-surface": "#84a1b0",
+              "secondary-container": "#ffdbce",
+              "surface-container-lowest": "#ffffff",
+              "surface-dim": "#a6e3ff",
+              "inverse-surface": "#001018",
+              outline: "#47829b",
+              "on-secondary": "#fff7f5",
+              "on-primary": "#f8f8ff",
             },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
             },
-            "fontFamily": {
-                    "headline": ["Plus Jakarta Sans"],
-                    "body": ["Lexend"],
-                    "label": ["Lexend"]
-            }
+            fontFamily: {
+              headline: ["Plus Jakarta Sans"],
+              body: ["Lexend"],
+              label: ["Lexend"],
+            },
           },
         },
-      }
+      };
     </script>
-</head>
-<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-[0_16px_32px_-12px_rgba(0,55,72,0.06)] tonal-layering-no-border">
-<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
-<div class="text-2xl font-bold text-blue-800 dark:text-blue-300 font-headline tracking-tight">Pró Família</div>
-<div class="hidden md:flex items-center space-x-8 font-headline font-semibold tracking-tight text-sm">
-<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors" href="home.html">Início</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors" href="sobreNos.html">Nossa História</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors" href="#">A Escola</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors" href="index.html">Projetos</a>
-<a class="text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 dark:border-blue-400 pb-1" href="comoAjudar.html">Como Ajudar</a>
-</div>
-<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm hover:scale-95 duration-200 shadow-lg shadow-primary/20">
-                Doar Agora
-            </button>
-</div>
-</nav>
-<main class="pt-20">
-<!-- Hero Section: Editorial Inspiration -->
-<section class="relative overflow-hidden py-24 lg:py-32 bg-surface">
-<div class="max-w-7xl mx-auto px-8 editorial-grid gap-8 items-center">
-<div class="col-span-12 lg:col-span-7">
-<span class="inline-block px-4 py-1.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label text-xs font-bold tracking-widest mb-6">TRANSFORME VIDAS</span>
-<h1 class="font-headline text-5xl lg:text-7xl font-extrabold text-on-surface tracking-tighter leading-[1.1] mb-8">
-                        Seu apoio é a semente do <span class="text-primary italic">amanhã</span>.
-                    </h1>
-<p class="text-body-lg text-on-surface-variant max-w-xl leading-relaxed mb-10">
-                        Na Pró Família, acreditamos que cada gesto de generosidade constrói uma ponte para o futuro. Escolha como você deseja impactar a vida das crianças e famílias da Mangueira hoje.
-                    </p>
-</div>
-<div class="col-span-12 lg:col-span-5 relative">
-<div class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl relative z-10 group">
-<img alt="Professora segurando a mão de uma criança enquanto escreve em uma sala de aula iluminada pela luz do sol." class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="assets/images/ajudar-hero-professora.jpg"/>
-</div>
-<div class="absolute -bottom-6 -left-6 w-48 h-48 bg-secondary-container rounded-3xl -z-0"></div>
-<div class="absolute -top-10 -right-4 w-32 h-32 border-[12px] border-tertiary-container rounded-full -z-0 opacity-50"></div>
-</div>
-</div>
-</section>
-<!-- Donation impact Grid (Bento Style) -->
-<section class="py-24 bg-surface-container-low">
-<div class="max-w-7xl mx-auto px-8">
-<div class="mb-16">
-<h2 class="font-headline text-4xl font-extrabold text-on-surface mb-4">Doação Financeira</h2>
-<p class="text-on-surface-variant font-body">Escolha um valor e veja o impacto real da sua contribuição.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Impact Card 1 -->
-<div class="bg-surface-container-lowest p-8 rounded-3xl hover:translate-y-[-8px] transition-all duration-300 group">
-<div class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center mb-8">
-<span class="material-symbols-outlined text-primary text-3xl">restaurant</span>
-</div>
-<h3 class="text-4xl font-headline font-extrabold text-on-surface mb-2">R$ 50</h3>
-<p class="text-on-surface-variant mb-8 leading-relaxed">Garante refeições nutritivas para um aluno durante uma semana inteira de aulas.</p>
-<button class="w-full py-4 rounded-full bg-surface-container-high font-headline font-bold text-on-surface hover:bg-primary hover:text-on-primary transition-colors">Doar este valor</button>
-</div>
-<!-- Impact Card 2 - Highlighted -->
-<div class="bg-primary text-on-primary p-8 rounded-3xl scale-105 shadow-xl shadow-primary/20 relative overflow-hidden group">
-<div class="absolute top-4 right-4 bg-tertiary text-on-tertiary px-3 py-1 rounded-full text-xs font-bold font-label">MAIS POPULAR</div>
-<div class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-8">
-<span class="material-symbols-outlined text-white text-3xl">school</span>
-</div>
-<h3 class="text-4xl font-headline font-extrabold text-white mb-2">R$ 150</h3>
-<p class="text-white/80 mb-8 leading-relaxed">Custeia o material escolar completo e uniforme para um estudante do ensino fundamental.</p>
-<button class="w-full py-4 rounded-full bg-white text-primary font-headline font-bold hover:scale-95 transition-transform">Doar este valor</button>
-</div>
-<!-- Impact Card 3 -->
-<div class="bg-surface-container-lowest p-8 rounded-3xl hover:translate-y-[-8px] transition-all duration-300 group">
-<div class="w-14 h-14 bg-tertiary-container rounded-2xl flex items-center justify-center mb-8">
-<span class="material-symbols-outlined text-tertiary text-3xl">diversity_1</span>
-</div>
-<h3 class="text-4xl font-headline font-extrabold text-on-surface mb-2">R$ 300</h3>
-<p class="text-on-surface-variant mb-8 leading-relaxed">Apoia o acompanhamento psicológico e social de uma família inteira por um mês.</p>
-<button class="w-full py-4 rounded-full bg-surface-container-high font-headline font-bold text-on-surface hover:bg-primary hover:text-on-primary transition-colors">Doar este valor</button>
-</div>
-</div>
-<!-- Custom Donation Field -->
-<div class="mt-12 bg-white/40 backdrop-blur-sm p-8 rounded-[2.5rem] flex flex-col md:flex-row items-center justify-between gap-8">
-<div class="flex items-center gap-6">
-<span class="material-symbols-outlined text-4xl text-primary" data-weight="fill">volunteer_activism</span>
-<div>
-<h4 class="font-headline font-bold text-xl">Outros Valores</h4>
-<p class="text-sm text-on-surface-variant">Toda ajuda é bem-vinda e faz a diferença.</p>
-</div>
-</div>
-<div class="flex w-full md:w-auto gap-4">
-<input class="flex-1 md:w-48 bg-surface-container-lowest border-none rounded-full px-6 py-4 focus:ring-2 focus:ring-primary outline-none font-headline font-bold" placeholder="R$ 0,00" type="number"/>
-<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold hover:bg-primary-dim transition-colors">Contribuir</button>
-</div>
-</div>
-</div>
-</section>
-<!-- Volunteering Section: Interactive Tiles -->
-<section class="py-24 bg-surface">
-<div class="max-w-7xl mx-auto px-8">
-<div class="text-center max-w-3xl mx-auto mb-20">
-<h2 class="font-headline text-4xl font-extrabold mb-6">Doe seu Tempo e Talento</h2>
-<p class="text-on-surface-variant">O voluntariado é a alma da nossa escola. Temos diversas áreas onde sua presença pode mudar uma trajetória.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-<!-- Voluntário Card 1 -->
-<div class="group relative aspect-square rounded-[2rem] overflow-hidden">
-<img alt="Voluntário ensinando matemática para um grupo de crianças sorridentes em uma sala de aula moderna." class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/images/ajudar-voluntario-educacao.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent p-8 flex flex-col justify-end">
-<span class="material-symbols-outlined text-white mb-4 text-3xl">menu_book</span>
-<h3 class="text-white font-headline font-bold text-2xl mb-2">Educação</h3>
-<p class="text-white/80 text-sm leading-snug opacity-0 group-hover:opacity-100 transition-opacity duration-300">Reforço escolar, idiomas e artes para nossas crianças.</p>
-</div>
-</div>
-<!-- Voluntário Card 2 -->
-<div class="group relative aspect-square rounded-[2rem] overflow-hidden">
-<img alt="Médica conversando com uma mãe e seu filho em uma clínica com iluminação suave." class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/images/ajudar-voluntario-saude.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/20 to-transparent p-8 flex flex-col justify-end">
-<span class="material-symbols-outlined text-white mb-4 text-3xl">medical_services</span>
-<h3 class="text-white font-headline font-bold text-2xl mb-2">Saúde</h3>
-<p class="text-white/80 text-sm leading-snug opacity-0 group-hover:opacity-100 transition-opacity duration-300">Apoio médico, psicológico e nutricional às famílias.</p>
-</div>
-</div>
-<!-- Voluntário Card 3 -->
-<div class="group relative aspect-square rounded-[2rem] overflow-hidden">
-<img alt="Voluntários organizando um festival comunitário com decorações coloridas e barracas de comida." class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/images/ajudar-voluntario-eventos.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-tertiary/90 via-tertiary/20 to-transparent p-8 flex flex-col justify-end">
-<span class="material-symbols-outlined text-white mb-4 text-3xl">celebration</span>
-<h3 class="text-white font-headline font-bold text-2xl mb-2">Eventos</h3>
-<p class="text-white/80 text-sm leading-snug opacity-0 group-hover:opacity-100 transition-opacity duration-300">Organização de festas comunitárias e mutirões de ajuda.</p>
-</div>
-</div>
-<!-- Voluntário Card 4 -->
-<div class="group relative aspect-square rounded-[2rem] overflow-hidden">
-<img alt="Espaço de trabalho profissional com laptop e documentos sendo organizados por um voluntário concentrado." class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/images/ajudar-voluntario-admin.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/20 to-transparent p-8 flex flex-col justify-end">
-<span class="material-symbols-outlined text-white mb-4 text-3xl">support_agent</span>
-<h3 class="text-white font-headline font-bold text-2xl mb-2">Apoio Adm</h3>
-<p class="text-white/80 text-sm leading-snug opacity-0 group-hover:opacity-100 transition-opacity duration-300">Comunicação, gestão e suporte técnico para a ONG.</p>
-</div>
-</div>
-</div>
-<div class="mt-12 text-center">
-<a class="inline-flex items-center gap-2 font-headline font-bold text-primary group" href="#">
-                        Quero me candidatar como voluntário
-                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
-</div>
-</div>
-</section>
-<!-- Item Donation: Split Layout -->
-<section class="py-24 bg-surface-container">
-<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-<div class="order-2 lg:order-1">
-<div class="grid grid-cols-2 gap-4">
-<div class="bg-surface-container-lowest p-6 rounded-3xl shadow-sm">
-<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-on-secondary-container">fastfood</span>
-</div>
-<h4 class="font-headline font-bold mb-2">Alimentos</h4>
-<p class="text-xs text-on-surface-variant">Arroz, feijão, leite em pó e cestas básicas são prioridades constantes.</p>
-</div>
-<div class="bg-surface-container-lowest p-6 rounded-3xl shadow-sm mt-8">
-<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-on-primary-container">edit_square</span>
-</div>
-<h4 class="font-headline font-bold mb-2">Materiais</h4>
-<p class="text-xs text-on-surface-variant">Cadernos, lápis, mochilas e uniformes novos ou em bom estado.</p>
-</div>
-<div class="bg-surface-container-lowest p-6 rounded-3xl shadow-sm">
-<div class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-on-tertiary-container">checkroom</span>
-</div>
-<h4 class="font-headline font-bold mb-2">Vestuário</h4>
-<p class="text-xs text-on-surface-variant">Roupas e calçados infantis para nossas crianças de 04 a 12 anos.</p>
-</div>
-<div class="bg-surface-container-lowest p-6 rounded-3xl shadow-sm mt-8">
-<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-on-surface-variant">computer</span>
-</div>
-<h4 class="font-headline font-bold mb-2">Tecnologia</h4>
-<p class="text-xs text-on-surface-variant">Tablets e notebooks para inclusão digital de nossos alunos.</p>
-</div>
-</div>
-</div>
-<div class="order-1 lg:order-2">
-<h2 class="font-headline text-4xl font-extrabold mb-6">Doação de Itens</h2>
-<p class="text-body-lg text-on-surface-variant mb-8 leading-relaxed">
-                        Sua casa tem o que nossa escola precisa. Recebemos doações de itens essenciais que complementam nossas atividades diárias e garantem o bem-estar das famílias.
-                    </p>
-<div class="space-y-4">
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-tertiary mt-1">location_on</span>
-<div>
-<p class="font-bold">Ponto de Coleta:</p>
-<p class="text-sm text-on-surface-variant">Rua da Escola, 123 - Mangueira, Rio de Janeiro</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-tertiary mt-1">schedule</span>
-<div>
-<p class="font-bold">Horário de Entrega:</p>
-<p class="text-sm text-on-surface-variant">Segunda a Sexta, das 08h às 17h</p>
-</div>
-</div>
-</div>
-<button class="mt-10 bg-secondary text-on-secondary px-8 py-4 rounded-full font-headline font-bold hover:scale-95 transition-transform shadow-lg shadow-secondary/20">Agendar Retirada (Acima de 10kg)</button>
-</div>
-</div>
-</section>
-<!-- Growth Progress Track: Signature Component -->
-<section class="py-20 bg-surface">
-<div class="max-w-4xl mx-auto px-8 bg-surface-container-highest/30 p-12 rounded-[3rem] text-center border border-outline-variant/10">
-<h3 class="font-headline text-2xl font-bold mb-4">Meta Mensal de Arrecadação</h3>
-<p class="text-on-surface-variant mb-10">Estamos em 65% da nossa meta para manter o projeto de música ativo este mês.</p>
-<div class="w-full h-4 bg-secondary-container rounded-full overflow-hidden mb-4">
-<div class="h-full w-[65%] bg-gradient-to-r from-primary to-tertiary rounded-full"></div>
-</div>
-<div class="flex justify-between font-label text-xs font-bold text-on-surface-variant">
-<span>ARRECADADO: R$ 19.500</span>
-<span>META: R$ 30.000</span>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-slate-50 dark:bg-slate-950 w-full py-12 border-t border-slate-200/50 dark:border-slate-800/50">
-<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
-<div class="col-span-1 md:col-span-1">
-<div class="font-['Plus_Jakarta_Sans'] font-bold text-lg text-blue-800 dark:text-blue-300 mb-4">Pró Família</div>
-<p class="font-['Lexend'] text-sm text-slate-500 leading-relaxed">
-                    Transformando realidades através da educação e do afeto no coração da Mangueira.
+  </head>
+  <body
+    class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container"
+  >
+    <!-- TopNavBar -->
+    <nav
+      class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-[0_16px_32px_-12px_rgba(0,55,72,0.06)] tonal-layering-no-border"
+    >
+      <div
+        class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20"
+      >
+        <div
+          class="text-2xl font-bold text-blue-800 dark:text-blue-300 font-headline tracking-tight"
+        >
+          Pró Família
+        </div>
+        <div
+          class="hidden md:flex items-center space-x-8 font-headline font-semibold tracking-tight text-sm"
+        >
+          <a
+            class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors"
+            href="home.html"
+            >Início</a
+          >
+          <a
+            class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors"
+            href="sobreNos.html"
+            >Nossa História</a
+          >
+          <a
+            class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors"
+            href="#"
+            >A Escola</a
+          >
+          <a
+            class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors"
+            href="index.html"
+            >Projetos</a
+          >
+          <a
+            class="text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 dark:border-blue-400 pb-1"
+            href="comoAjudar.html"
+            >Como Ajudar</a
+          >
+        </div>
+        <button
+          class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm hover:scale-95 duration-200 shadow-lg shadow-primary/20"
+        >
+          Doar Agora
+        </button>
+      </div>
+    </nav>
+    <main class="pt-20">
+      <!-- Hero Section: Editorial Inspiration -->
+      <section class="relative overflow-hidden py-24 lg:py-32 bg-surface">
+        <div class="max-w-7xl mx-auto px-8 editorial-grid gap-8 items-center">
+          <div class="col-span-12 lg:col-span-7">
+            <span
+              class="inline-block px-4 py-1.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label text-xs font-bold tracking-widest mb-6"
+              >TRANSFORME VIDAS</span
+            >
+            <h1
+              class="font-headline text-5xl lg:text-7xl font-extrabold text-on-surface tracking-tighter leading-[1.1] mb-8"
+            >
+              Seu apoio é a semente do
+              <span class="text-primary italic">amanhã</span>.
+            </h1>
+            <p
+              class="text-body-lg text-on-surface-variant max-w-xl leading-relaxed mb-10"
+            >
+              Na Pró Família, acreditamos que cada gesto de generosidade
+              constrói uma ponte para o futuro. Escolha como você deseja
+              impactar a vida das crianças e famílias da Mangueira hoje.
+            </p>
+          </div>
+          <div class="col-span-12 lg:col-span-5 relative">
+            <div
+              class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl relative z-10 group"
+            >
+              <img
+                alt="Professora segurando a mão de uma criança enquanto escreve em uma sala de aula iluminada pela luz do sol."
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                src="assets/images/ajudar-hero-professora.jpg"
+              />
+            </div>
+            <div
+              class="absolute -bottom-6 -left-6 w-48 h-48 bg-secondary-container rounded-3xl -z-0"
+            ></div>
+            <div
+              class="absolute -top-10 -right-4 w-32 h-32 border-[12px] border-tertiary-container rounded-full -z-0 opacity-50"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- Donation impact Grid (Bento Style) -->
+      <section class="py-24 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-8">
+          <div class="mb-16">
+            <h2
+              class="font-headline text-4xl font-extrabold text-on-surface mb-4"
+            >
+              Doação Financeira
+            </h2>
+            <p class="text-on-surface-variant font-body">
+              Escolha um valor e veja o impacto real da sua contribuição.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Impact Card 1 -->
+            <div
+              class="bg-surface-container-lowest p-8 rounded-3xl hover:translate-y-[-8px] transition-all duration-300 group"
+            >
+              <div
+                class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center mb-8"
+              >
+                <span class="material-symbols-outlined text-primary text-3xl"
+                  >restaurant</span
+                >
+              </div>
+              <h3
+                class="text-4xl font-headline font-extrabold text-on-surface mb-2"
+              >
+                R$ 50
+              </h3>
+              <p class="text-on-surface-variant mb-8 leading-relaxed">
+                Garante refeições nutritivas para um aluno durante uma semana
+                inteira de aulas.
+              </p>
+              <button
+                class="w-full py-4 rounded-full bg-surface-container-high font-headline font-bold text-on-surface hover:bg-primary hover:text-on-primary transition-colors"
+              >
+                Doar este valor
+              </button>
+            </div>
+            <!-- Impact Card 2 - Highlighted -->
+            <div
+              class="bg-primary text-on-primary p-8 rounded-3xl scale-105 shadow-xl shadow-primary/20 relative overflow-hidden group"
+            >
+              <div
+                class="absolute top-4 right-4 bg-tertiary text-on-tertiary px-3 py-1 rounded-full text-xs font-bold font-label"
+              >
+                MAIS POPULAR
+              </div>
+              <div
+                class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-8"
+              >
+                <span class="material-symbols-outlined text-white text-3xl"
+                  >school</span
+                >
+              </div>
+              <h3 class="text-4xl font-headline font-extrabold text-white mb-2">
+                R$ 150
+              </h3>
+              <p class="text-white/80 mb-8 leading-relaxed">
+                Custeia o material escolar completo e uniforme para um estudante
+                do ensino fundamental.
+              </p>
+              <button
+                class="w-full py-4 rounded-full bg-white text-primary font-headline font-bold hover:scale-95 transition-transform"
+              >
+                Doar este valor
+              </button>
+            </div>
+            <!-- Impact Card 3 -->
+            <div
+              class="bg-surface-container-lowest p-8 rounded-3xl hover:translate-y-[-8px] transition-all duration-300 group"
+            >
+              <div
+                class="w-14 h-14 bg-tertiary-container rounded-2xl flex items-center justify-center mb-8"
+              >
+                <span class="material-symbols-outlined text-tertiary text-3xl"
+                  >diversity_1</span
+                >
+              </div>
+              <h3
+                class="text-4xl font-headline font-extrabold text-on-surface mb-2"
+              >
+                R$ 300
+              </h3>
+              <p class="text-on-surface-variant mb-8 leading-relaxed">
+                Apoia o acompanhamento psicológico e social de uma família
+                inteira por um mês.
+              </p>
+              <button
+                class="w-full py-4 rounded-full bg-surface-container-high font-headline font-bold text-on-surface hover:bg-primary hover:text-on-primary transition-colors"
+              >
+                Doar este valor
+              </button>
+            </div>
+          </div>
+          <!-- Custom Donation Field -->
+          <div
+            class="mt-12 bg-white/40 backdrop-blur-sm p-8 rounded-[2.5rem] flex flex-col md:flex-row items-center justify-between gap-8"
+          >
+            <div class="flex items-center gap-6">
+              <span
+                class="material-symbols-outlined text-4xl text-primary"
+                data-weight="fill"
+                >volunteer_activism</span
+              >
+              <div>
+                <h4 class="font-headline font-bold text-xl">Outros Valores</h4>
+                <p class="text-sm text-on-surface-variant">
+                  Toda ajuda é bem-vinda e faz a diferença.
                 </p>
-</div>
-<div>
-<h4 class="font-bold text-blue-700 mb-4 text-sm font-headline">Navegação</h4>
-<ul class="space-y-2 font-['Lexend'] text-sm">
-<li><a class="text-slate-500 hover:text-blue-600 transition-all hover:underline" href="#">Nossa História</a></li>
-<li><a class="text-slate-500 hover:text-blue-600 transition-all hover:underline" href="#">Projetos</a></li>
-<li><a class="text-slate-500 hover:text-blue-600 transition-all hover:underline" href="#">Transparência</a></li>
-<li><a class="text-slate-500 hover:text-blue-600 transition-all hover:underline" href="#">Relatórios</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-blue-700 mb-4 text-sm font-headline">Contato</h4>
-<ul class="space-y-2 font-['Lexend'] text-sm">
-<li class="text-slate-500">contato@profamilia.org.br</li>
-<li class="text-slate-500">(21) 99999-9999</li>
-<li class="text-slate-500">Mangueira, Rio de Janeiro</li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-blue-700 mb-4 text-sm font-headline">Redes Sociais</h4>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">favorite</span></a>
-<a class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
-</div>
-</div>
-</div>
-<div class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-slate-200/50 text-center">
-<p class="font-['Lexend'] text-xs text-slate-400">© 2025 Associação Pró Família — Transformando vidas na Mangueira.</p>
-</div>
-</footer>
-</body></html>
+              </div>
+            </div>
+            <div class="flex w-full md:w-auto gap-4">
+              <input
+                class="flex-1 md:w-48 bg-surface-container-lowest border-none rounded-full px-6 py-4 focus:ring-2 focus:ring-primary outline-none font-headline font-bold"
+                placeholder="R$ 0,00"
+                type="number"
+              />
+              <button
+                class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold hover:bg-primary-dim transition-colors"
+              >
+                Contribuir
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Volunteering Section: Interactive Tiles -->
+      <section class="py-24 bg-surface">
+        <div class="max-w-7xl mx-auto px-8">
+          <div class="text-center max-w-3xl mx-auto mb-20">
+            <h2 class="font-headline text-4xl font-extrabold mb-6">
+              Doe seu Tempo e Talento
+            </h2>
+            <p class="text-on-surface-variant">
+              O voluntariado é a alma da nossa escola. Temos diversas áreas onde
+              sua presença pode mudar uma trajetória.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Voluntário Card 1 -->
+            <div
+              class="group relative aspect-square rounded-[2rem] overflow-hidden"
+            >
+              <img
+                alt="Voluntário ensinando matemática para um grupo de crianças sorridentes em uma sala de aula moderna."
+                class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                src="assets/images/ajudar-voluntario-educacao.jpg"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent p-8 flex flex-col justify-end"
+              >
+                <span class="material-symbols-outlined text-white mb-4 text-3xl"
+                  >menu_book</span
+                >
+                <h3 class="text-white font-headline font-bold text-2xl mb-2">
+                  Educação
+                </h3>
+                <p
+                  class="text-white/80 text-sm leading-snug opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  Reforço escolar, idiomas e artes para nossas crianças.
+                </p>
+              </div>
+            </div>
+            <!-- Voluntário Card 2 -->
+            <div
+              class="group relative aspect-square rounded-[2rem] overflow-hidden"
+            >
+              <img
+                alt="Médica conversando com uma mãe e seu filho em uma clínica com iluminação suave."
+                class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                src="assets/images/ajudar-voluntario-saude.jpg"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/20 to-transparent p-8 flex flex-col justify-end"
+              >
+                <span class="material-symbols-outlined text-white mb-4 text-3xl"
+                  >medical_services</span
+                >
+                <h3 class="text-white font-headline font-bold text-2xl mb-2">
+                  Saúde
+                </h3>
+                <p
+                  class="text-white/80 text-sm leading-snug opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  Apoio médico, psicológico e nutricional às famílias.
+                </p>
+              </div>
+            </div>
+            <!-- Voluntário Card 3 -->
+            <div
+              class="group relative aspect-square rounded-[2rem] overflow-hidden"
+            >
+              <img
+                alt="Voluntários organizando um festival comunitário com decorações coloridas e barracas de comida."
+                class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                src="assets/images/ajudar-voluntario-eventos.jpg"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-tertiary/90 via-tertiary/20 to-transparent p-8 flex flex-col justify-end"
+              >
+                <span class="material-symbols-outlined text-white mb-4 text-3xl"
+                  >celebration</span
+                >
+                <h3 class="text-white font-headline font-bold text-2xl mb-2">
+                  Eventos
+                </h3>
+                <p
+                  class="text-white/80 text-sm leading-snug opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  Organização de festas comunitárias e mutirões de ajuda.
+                </p>
+              </div>
+            </div>
+            <!-- Voluntário Card 4 -->
+            <div
+              class="group relative aspect-square rounded-[2rem] overflow-hidden"
+            >
+              <img
+                alt="Espaço de trabalho profissional com laptop e documentos sendo organizados por um voluntário concentrado."
+                class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                src="assets/images/ajudar-voluntario-admin.jpg"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/20 to-transparent p-8 flex flex-col justify-end"
+              >
+                <span class="material-symbols-outlined text-white mb-4 text-3xl"
+                  >support_agent</span
+                >
+                <h3 class="text-white font-headline font-bold text-2xl mb-2">
+                  Apoio Adm
+                </h3>
+                <p
+                  class="text-white/80 text-sm leading-snug opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  Comunicação, gestão e suporte técnico para a ONG.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 text-center">
+            <a
+              class="inline-flex items-center gap-2 font-headline font-bold text-primary group"
+              href="#"
+            >
+              Quero me candidatar como voluntário
+              <span
+                class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                >arrow_forward</span
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Item Donation: Split Layout -->
+      <section class="py-24 bg-surface-container">
+        <div
+          class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+        >
+          <div class="order-2 lg:order-1">
+            <div class="grid grid-cols-2 gap-4">
+              <div
+                class="bg-surface-container-lowest p-6 rounded-3xl shadow-sm"
+              >
+                <div
+                  class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center mb-4"
+                >
+                  <span
+                    class="material-symbols-outlined text-on-secondary-container"
+                    >fastfood</span
+                  >
+                </div>
+                <h4 class="font-headline font-bold mb-2">Alimentos</h4>
+                <p class="text-xs text-on-surface-variant">
+                  Arroz, feijão, leite em pó e cestas básicas são prioridades
+                  constantes.
+                </p>
+              </div>
+              <div
+                class="bg-surface-container-lowest p-6 rounded-3xl shadow-sm mt-8"
+              >
+                <div
+                  class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center mb-4"
+                >
+                  <span
+                    class="material-symbols-outlined text-on-primary-container"
+                    >edit_square</span
+                  >
+                </div>
+                <h4 class="font-headline font-bold mb-2">Materiais</h4>
+                <p class="text-xs text-on-surface-variant">
+                  Cadernos, lápis, mochilas e uniformes novos ou em bom estado.
+                </p>
+              </div>
+              <div
+                class="bg-surface-container-lowest p-6 rounded-3xl shadow-sm"
+              >
+                <div
+                  class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center mb-4"
+                >
+                  <span
+                    class="material-symbols-outlined text-on-tertiary-container"
+                    >checkroom</span
+                  >
+                </div>
+                <h4 class="font-headline font-bold mb-2">Vestuário</h4>
+                <p class="text-xs text-on-surface-variant">
+                  Roupas e calçados infantis para nossas crianças de 04 a 12
+                  anos.
+                </p>
+              </div>
+              <div
+                class="bg-surface-container-lowest p-6 rounded-3xl shadow-sm mt-8"
+              >
+                <div
+                  class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center mb-4"
+                >
+                  <span
+                    class="material-symbols-outlined text-on-surface-variant"
+                    >computer</span
+                  >
+                </div>
+                <h4 class="font-headline font-bold mb-2">Tecnologia</h4>
+                <p class="text-xs text-on-surface-variant">
+                  Tablets e notebooks para inclusão digital de nossos alunos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2">
+            <h2 class="font-headline text-4xl font-extrabold mb-6">
+              Doação de Itens
+            </h2>
+            <p
+              class="text-body-lg text-on-surface-variant mb-8 leading-relaxed"
+            >
+              Sua casa tem o que nossa escola precisa. Recebemos doações de
+              itens essenciais que complementam nossas atividades diárias e
+              garantem o bem-estar das famílias.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-start gap-4">
+                <span class="material-symbols-outlined text-tertiary mt-1"
+                  >location_on</span
+                >
+                <div>
+                  <p class="font-bold">Ponto de Coleta:</p>
+                  <p class="text-sm text-on-surface-variant">
+                    Rua da Escola, 123 - Mangueira, Rio de Janeiro
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <span class="material-symbols-outlined text-tertiary mt-1"
+                  >schedule</span
+                >
+                <div>
+                  <p class="font-bold">Horário de Entrega:</p>
+                  <p class="text-sm text-on-surface-variant">
+                    Segunda a Sexta, das 08h às 17h
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="mt-10 bg-secondary text-on-secondary px-8 py-4 rounded-full font-headline font-bold hover:scale-95 transition-transform shadow-lg shadow-secondary/20"
+            >
+              Agendar Retirada (Acima de 10kg)
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Growth Progress Track: Signature Component -->
+      <section class="py-20 bg-surface">
+        <div
+          class="max-w-4xl mx-auto px-8 bg-surface-container-highest/30 p-12 rounded-[3rem] text-center border border-outline-variant/10"
+        >
+          <h3 class="font-headline text-2xl font-bold mb-4">
+            Meta Mensal de Arrecadação
+          </h3>
+          <p class="text-on-surface-variant mb-10">
+            Estamos em 65% da nossa meta para manter o projeto de música ativo
+            este mês.
+          </p>
+          <div
+            class="w-full h-4 bg-secondary-container rounded-full overflow-hidden mb-4"
+          >
+            <div
+              class="h-full w-[65%] bg-gradient-to-r from-primary to-tertiary rounded-full"
+            ></div>
+          </div>
+          <div
+            class="flex justify-between font-label text-xs font-bold text-on-surface-variant"
+          >
+            <span>ARRECADADO: R$ 19.500</span>
+            <span>META: R$ 30.000</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-slate-50 dark:bg-slate-950 w-full py-12 border-t border-slate-200/50 dark:border-slate-800/50"
+    >
+      <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="col-span-1 md:col-span-1">
+          <div
+            class="font-['Plus_Jakarta_Sans'] font-bold text-lg text-blue-800 dark:text-blue-300 mb-4"
+          >
+            Pró Família
+          </div>
+          <p class="font-['Lexend'] text-sm text-slate-500 leading-relaxed">
+            Transformando realidades através da educação e do afeto no coração
+            da Mangueira.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-bold text-blue-700 mb-4 text-sm font-headline">
+            Navegação
+          </h4>
+          <ul class="space-y-2 font-['Lexend'] text-sm">
+            <li>
+              <a
+                class="text-slate-500 hover:text-blue-600 transition-all hover:underline"
+                href="#"
+                >Nossa História</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-500 hover:text-blue-600 transition-all hover:underline"
+                href="#"
+                >Projetos</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-500 hover:text-blue-600 transition-all hover:underline"
+                href="#"
+                >Transparência</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-500 hover:text-blue-600 transition-all hover:underline"
+                href="#"
+                >Relatórios</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-blue-700 mb-4 text-sm font-headline">
+            Contato
+          </h4>
+          <ul class="space-y-2 font-['Lexend'] text-sm">
+            <li class="text-slate-500">contato@profamilia.org.br</li>
+            <li class="text-slate-500">(21) 99999-9999</li>
+            <li class="text-slate-500">Mangueira, Rio de Janeiro</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-blue-700 mb-4 text-sm font-headline">
+            Redes Sociais
+          </h4>
+          <div class="flex gap-4">
+            <a
+              class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all"
+              href="#"
+              ><span class="material-symbols-outlined text-sm"
+                >favorite</span
+              ></a
+            >
+            <a
+              class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all"
+              href="#"
+              ><span class="material-symbols-outlined text-sm">share</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-slate-200/50 text-center"
+      >
+        <p class="font-['Lexend'] text-xs text-slate-400">
+          © 2025 Associação Pró Família — Transformando vidas na Mangueira.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

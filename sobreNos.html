@@ -1,322 +1,690 @@
-<!DOCTYPE html><html lang="pt-BR"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Nossa História — Associação Pró Família</title>
-<meta name="description" content="Conheça a trajetória de 30 anos da Associação Pró Fam��lia na Mangueira, Rio de Janeiro. De um grupo de apoio a gestantes a uma escola de referência.">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Lexend:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="css/styles.css" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Nossa História — Associação Pró Família</title>
+    <meta
+      name="description"
+      content="Conheça a trajetória de 30 anos da Associação Pró Fam��lia na Mangueira, Rio de Janeiro. De um grupo de apoio a gestantes a uma escola de referência."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Lexend:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
-            "colors": {
-                    "error-dim": "#70030f",
-                    "surface-container-highest": "#bde9ff",
-                    "tertiary-fixed": "#91f78e",
-                    "surface": "#f4faff",
-                    "on-surface-variant": "#27667e",
-                    "surface-variant": "#bde9ff",
-                    "on-secondary-container": "#674b41",
-                    "error": "#ac3434",
-                    "tertiary-dim": "#006118",
-                    "surface-container-low": "#e6f6ff",
-                    "tertiary": "#006f1d",
-                    "on-surface": "#003748",
-                    "tertiary-container": "#91f78e",
-                    "secondary": "#75584e",
-                    "on-primary-fixed-variant": "#104583",
-                    "on-secondary-fixed-variant": "#72554b",
-                    "tertiary-fixed-dim": "#83e881",
-                    "secondary-fixed-dim": "#f3ccbf",
-                    "on-tertiary-fixed": "#00480f",
-                    "primary-dim": "#245392",
-                    "on-error-container": "#65000b",
-                    "surface-container": "#d9f2ff",
-                    "primary": "#335f9f",
-                    "background": "#f4faff",
-                    "secondary-dim": "#684d43",
-                    "surface-container-high": "#cbedff",
-                    "on-primary-container": "#003c78",
-                    "outline-variant": "#80bad5",
-                    "on-error": "#fff7f6",
-                    "on-tertiary-fixed-variant": "#00691a",
-                    "surface-bright": "#f4faff",
-                    "secondary-fixed": "#ffdbce",
-                    "primary-fixed-dim": "#8bb4f9",
-                    "inverse-primary": "#88b2f7",
-                    "on-tertiary": "#eaffe2",
-                    "primary-fixed": "#9fc2ff",
-                    "primary-container": "#9fc2ff",
-                    "on-secondary-fixed": "#533930",
-                    "surface-tint": "#335f9f",
-                    "error-container": "#f56965",
-                    "on-primary-fixed": "#002753",
-                    "on-tertiary-container": "#005e17",
-                    "on-background": "#003748",
-                    "inverse-on-surface": "#84a1b0",
-                    "secondary-container": "#ffdbce",
-                    "surface-container-lowest": "#ffffff",
-                    "surface-dim": "#a6e3ff",
-                    "inverse-surface": "#001018",
-                    "outline": "#47829b",
-                    "on-secondary": "#fff7f5",
-                    "on-primary": "#f8f8ff"
+            colors: {
+              "error-dim": "#70030f",
+              "surface-container-highest": "#bde9ff",
+              "tertiary-fixed": "#91f78e",
+              surface: "#f4faff",
+              "on-surface-variant": "#27667e",
+              "surface-variant": "#bde9ff",
+              "on-secondary-container": "#674b41",
+              error: "#ac3434",
+              "tertiary-dim": "#006118",
+              "surface-container-low": "#e6f6ff",
+              tertiary: "#006f1d",
+              "on-surface": "#003748",
+              "tertiary-container": "#91f78e",
+              secondary: "#75584e",
+              "on-primary-fixed-variant": "#104583",
+              "on-secondary-fixed-variant": "#72554b",
+              "tertiary-fixed-dim": "#83e881",
+              "secondary-fixed-dim": "#f3ccbf",
+              "on-tertiary-fixed": "#00480f",
+              "primary-dim": "#245392",
+              "on-error-container": "#65000b",
+              "surface-container": "#d9f2ff",
+              primary: "#335f9f",
+              background: "#f4faff",
+              "secondary-dim": "#684d43",
+              "surface-container-high": "#cbedff",
+              "on-primary-container": "#003c78",
+              "outline-variant": "#80bad5",
+              "on-error": "#fff7f6",
+              "on-tertiary-fixed-variant": "#00691a",
+              "surface-bright": "#f4faff",
+              "secondary-fixed": "#ffdbce",
+              "primary-fixed-dim": "#8bb4f9",
+              "inverse-primary": "#88b2f7",
+              "on-tertiary": "#eaffe2",
+              "primary-fixed": "#9fc2ff",
+              "primary-container": "#9fc2ff",
+              "on-secondary-fixed": "#533930",
+              "surface-tint": "#335f9f",
+              "error-container": "#f56965",
+              "on-primary-fixed": "#002753",
+              "on-tertiary-container": "#005e17",
+              "on-background": "#003748",
+              "inverse-on-surface": "#84a1b0",
+              "secondary-container": "#ffdbce",
+              "surface-container-lowest": "#ffffff",
+              "surface-dim": "#a6e3ff",
+              "inverse-surface": "#001018",
+              outline: "#47829b",
+              "on-secondary": "#fff7f5",
+              "on-primary": "#f8f8ff",
             },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
             },
-            "fontFamily": {
-                    "headline": ["Plus Jakarta Sans"],
-                    "body": ["Lexend"],
-                    "label": ["Lexend"]
-            }
+            fontFamily: {
+              headline: ["Plus Jakarta Sans"],
+              body: ["Lexend"],
+              label: ["Lexend"],
+            },
           },
         },
-      }
+      };
     </script>
-</head>
-<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
-<!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md editorial-shadow">
-<nav class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
-<div class="text-2xl font-bold text-blue-800 dark:text-blue-300 font-headline tracking-tight">Pró Família</div>
-<div class="hidden md:flex items-center gap-8 font-headline font-semibold text-sm">
-<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors" href="home.html">Início</a>
-<a class="text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 dark:border-blue-400 pb-1" href="sobreNos.html">Nossa História</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors" href="#">A Escola</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors" href="index.html">Projetos</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors" href="comoAjudar.html">Como Ajudar</a>
-</div>
-<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm hover:scale-95 transition-all duration-200" style="">
-                Doar Agora
-            </button>
-</nav>
-</header>
-<main class="pt-20">
-<!-- Hero Section -->
-<section class="relative min-h-[716px] flex items-center overflow-hidden bg-surface-container-low">
-<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
-<div class="space-y-6">
-<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label text-xs font-bold tracking-widest uppercase" style="">30 ANOS DE LEGADO</span>
-<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.1] tracking-tight" style="">
-                        Transformando vidas na <span class="text-primary" style="">Mangueira</span>.
-                    </h1>
-<p class="text-on-surface-variant text-lg md:text-xl max-w-lg leading-relaxed" style="">
-                        Nossa jornada começou com um abraço e um desejo de cuidar. Conheça a trajetória que transformou um grupo de apoio em uma escola de futuro.
-                    </p>
-</div>
-<div class="relative">
-<div class="aspect-square rounded-[2rem] overflow-hidden rotate-3 editorial-shadow">
-<img alt="Criança sorridente em uma comunidade vibrante com luz quente da tarde e prédios coloridos ao fundo." class="w-full h-full object-cover" src="assets/images/sobre-hero-crianca.jpg">
-</div>
-<div class="absolute -bottom-8 -left-8 aspect-square w-48 rounded-xl overflow-hidden -rotate-6 border-8 border-white editorial-shadow hidden md:block">
-<img alt="Fotografia nostálgica de um grupo de mulheres sentadas em círculo compartilhando histórias em uma sala comunitária simples." class="w-full h-full object-cover" src="assets/images/sobre-mulheres-historico.jpg">
-</div>
-</div>
-</div>
-<div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-highest/20 -skew-x-12 translate-x-1/2"></div>
-</section>
-<!-- Timeline Section -->
-<section class="py-24 bg-surface">
-<div class="max-w-5xl mx-auto px-8 relative">
-<div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 timeline-line -translate-x-1/2 opacity-30"></div>
-<div class="space-y-32">
-<!-- 1994: O Início -->
-<div class="relative flex flex-col md:flex-row items-center gap-8 md:gap-0">
-<div class="md:w-1/2 md:pr-16 md:text-right order-2 md:order-1">
-<h3 class="font-headline text-4xl font-extrabold text-primary mb-4" style="">1994</h3>
-<h4 class="font-headline text-2xl font-bold text-on-surface mb-4" style="">O Nascimento de um Propósito</h4>
-<p class="text-on-surface-variant leading-relaxed" style="">
-                                No coração da Mangueira, um pequeno grupo de apoio a gestantes começava a se reunir. O objetivo era simples, mas vital: oferecer dignidade e orientação para mães em situação de vulnerabilidade.
-                            </p>
-</div>
-<div class="absolute left-8 md:left-1/2 w-10 h-10 bg-primary rounded-full -translate-x-1/2 flex items-center justify-center text-white z-10 editorial-shadow">
-<span class="material-symbols-outlined" style="font-variation-settings: &quot;opsz&quot; 20;">volunteer_activism</span>
-</div>
-<div class="md:w-1/2 md:pl-16 order-1 md:order-2">
-<div class="rounded-2xl overflow-hidden editorial-shadow bg-surface-container-low p-4">
-<img alt="Encontro comunitário sob uma grande árvore, com tons nostálgicos de uma tarde de verão no Rio." class="rounded-xl w-full aspect-video object-cover" src="assets/images/sobre-inicio-1994.jpg">
-</div>
-</div>
-</div>
-<!-- 2005: Evolução -->
-<div class="relative flex flex-col md:flex-row items-center gap-8 md:gap-0">
-<div class="md:w-1/2 md:pr-16 order-1">
-<div class="rounded-2xl overflow-hidden editorial-shadow bg-surface-container-low p-4">
-<img alt="Grupo de crianças sentadas em um tapete colorido, atentas a uma professora lendo uma história." class="rounded-xl w-full aspect-video object-cover" src="assets/images/sobre-ampliacao-2005.jpg">
-</div>
-</div>
-<div class="absolute left-8 md:left-1/2 w-10 h-10 bg-secondary rounded-full -translate-x-1/2 flex items-center justify-center text-white z-10 editorial-shadow">
-<span class="material-symbols-outlined" style="font-variation-settings: &quot;opsz&quot; 20;">groups</span>
-</div>
-<div class="md:w-1/2 md:pl-16 order-2">
-<h3 class="font-headline text-4xl font-extrabold text-secondary mb-4" style="">2005</h3>
-<h4 class="font-headline text-2xl font-bold text-on-surface mb-4" style="">Ampliação do Olhar</h4>
-<p class="text-on-surface-variant leading-relaxed" style="">
-                                Percebemos que o cuidado com a mãe precisava se estender ao desenvolvimento integral da criança. Iniciamos as primeiras oficinas socioeducativas e reforço escolar no contraturno.
-                            </p>
-</div>
-</div>
-<!-- 2018: A Escola -->
-<div class="relative flex flex-col md:flex-row items-center gap-8 md:gap-0">
-<div class="md:w-1/2 md:pr-16 md:text-right order-2 md:order-1">
-<h3 class="font-headline text-4xl font-extrabold text-tertiary mb-4" style="">2018</h3>
-<h4 class="font-headline text-2xl font-bold text-on-surface mb-4" style="">O Sonho ganha Paredes</h4>
-<p class="text-on-surface-variant leading-relaxed" style="">
-                                Inauguramos nossa sede própria, estruturada para funcionar como uma escola de educação infantil de excelência. De um pequeno grupo, passamos a impactar dezenas de famílias diariamente.
-                            </p>
-</div>
-<div class="absolute left-8 md:left-1/2 w-10 h-10 bg-tertiary rounded-full -translate-x-1/2 flex items-center justify-center text-white z-10 editorial-shadow">
-<span class="material-symbols-outlined" style="font-variation-settings: &quot;opsz&quot; 20;">school</span>
-</div>
-<div class="md:w-1/2 md:pl-16 order-1 md:order-2">
-<div class="rounded-2xl overflow-hidden editorial-shadow bg-surface-container-low p-4">
-<img alt="Arquitetura moderna e minimalista da escola com grandes janelas, paredes brancas e uma pequena horta na frente." class="rounded-xl w-full aspect-video object-cover" src="assets/images/sobre-escola-2018.jpg">
-</div>
-</div>
-</div>
-<!-- Hoje -->
-<div class="relative flex flex-col md:flex-row items-center gap-8 md:gap-0">
-<div class="md:w-1/2 md:pr-16 order-1">
-<div class="grid grid-cols-2 gap-4">
-<div class="bg-primary-container p-6 rounded-2xl flex flex-col justify-center">
-<span class="font-headline text-4xl font-extrabold text-on-primary-container" style="">104</span>
-<span class="font-label text-xs uppercase font-bold text-on-primary-fixed-variant" style="">Alunos Ativos</span>
-</div>
-<div class="bg-tertiary-container p-6 rounded-2xl flex flex-col justify-center">
-<span class="font-headline text-4xl font-extrabold text-on-tertiary-container" style="">30</span>
-<span class="font-label text-xs uppercase font-bold text-on-tertiary-fixed-variant" style="">Anos de História</span>
-</div>
-</div>
-</div>
-<div class="absolute left-8 md:left-1/2 w-14 h-14 bg-on-surface rounded-full -translate-x-1/2 flex items-center justify-center text-white z-10 editorial-shadow">
-<span class="material-symbols-outlined" style="font-variation-settings: &quot;opsz&quot; 28;">star</span>
-</div>
-<div class="md:w-1/2 md:pl-16 order-2">
-<h3 class="font-headline text-4xl font-extrabold text-on-surface mb-4" style="">Hoje</h3>
-<h4 class="font-headline text-2xl font-bold text-on-surface mb-4" style="">Multiplicando Futuros</h4>
-<p class="text-on-surface-variant leading-relaxed" style="">
-                                Atualmente, atendemos 104 crianças em período integral, oferecendo educação, alimentação, saúde e, acima de tudo, um ambiente seguro para crescer e sonhar.
-                            </p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Values/Bento Grid Section -->
-<section class="py-24 bg-surface-container-low">
-<div class="max-w-7xl mx-auto px-8">
-<div class="mb-16 text-center max-w-2xl mx-auto">
-<h2 class="font-headline text-4xl font-extrabold text-on-surface mb-6" style="">O que nos move diariamente</h2>
-<p class="text-on-surface-variant" style="">Princípios que guiam cada passo da Pró Família desde 1994.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
-<div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-[2rem] flex flex-col justify-end relative overflow-hidden group">
-<div class="absolute top-0 right-0 p-8">
-<span class="material-symbols-outlined text-6xl text-primary opacity-10 group-hover:opacity-20 transition-opacity" style="">favorite</span>
-</div>
-<h3 class="font-headline text-3xl font-bold text-on-surface mb-4" style="">Afeto como Base</h3>
-<p class="text-on-surface-variant text-lg" style="">Acreditamos que nenhuma educação é efetiva sem o acolhimento emocional. Aqui, cada criança é vista e ouvida.</p>
-</div>
-<div class="bg-primary text-on-primary p-10 rounded-[2rem] flex flex-col justify-between">
-<span class="material-symbols-outlined text-4xl" style="">local_library</span>
-<div>
-<h3 class="font-headline text-2xl font-bold mb-2" style="">Excelência</h3>
-<p class="text-primary-container/80 text-sm" style="">Oferecemos o melhor em infraestrutura e pedagogia para quem mais precisa.</p>
-</div>
-</div>
-<div class="bg-secondary-container p-10 rounded-[2rem] flex flex-col justify-between">
-<span class="material-symbols-outlined text-4xl text-on-secondary-container" style="">eco</span>
-<div>
-<h3 class="font-headline text-2xl font-bold text-on-secondary-container mb-2" style="">Sustentabilidade</h3>
-<p class="text-on-secondary-container/70 text-sm" style="">Cuidamos do hoje pensando no amanhã da nossa comunidade e do planeta.</p>
-</div>
-</div>
-<div class="md:col-span-2 bg-white p-10 rounded-[2rem] flex flex-col justify-center relative overflow-hidden">
-<div class="flex items-center gap-6">
-<div class="h-20 w-1 bg-tertiary rounded-full"></div>
-<div>
-<h3 class="font-headline text-3xl font-bold text-on-surface mb-2" style="">Impacto Comunitário</h3>
-<p class="text-on-surface-variant text-lg" style="">Nossa história se confunde com a história da Mangueira. Somos parte da solução local.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- CTA Section -->
-<section class="py-24 bg-white overflow-hidden">
-<div class="max-w-7xl mx-auto px-8 relative">
-<div class="bg-on-surface text-white rounded-[3rem] p-12 md:p-24 relative overflow-hidden flex flex-col md:flex-row items-center gap-12">
-<div class="relative z-10 md:w-2/3">
-<h2 class="font-headline text-4xl md:text-6xl font-extrabold mb-8 leading-tight" style="">Faça parte dos próximos <span class="text-tertiary-fixed" style="">30 anos</span>.</h2>
-<p class="text-surface-container-highest/80 text-xl mb-10 max-w-xl" style="">Sua doação garante que 104 crianças continuem tendo acesso a uma educação transformadora. Ajude-nos a escrever o próximo capítulo.</p>
-<div class="flex flex-wrap gap-4">
-<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold hover:scale-105 transition-transform flex items-center gap-2" style="">
-<span class="material-symbols-outlined" style="">favorite</span>
-                                Quero Contribuir
-                            </button>
-<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-full font-headline font-bold hover:bg-white/20 transition-colors" style="">
-                                Conhecer Projetos
-                            </button>
-</div>
-</div>
-<div class="md:w-1/3 relative z-10 flex justify-center">
-<div class="w-64 h-64 rounded-full bg-tertiary/20 animate-pulse absolute -z-10 blur-3xl"></div>
-<img alt="Retrato de criança rindo alegremente, com iluminação quente." class="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full border-4 border-tertiary-fixed shadow-2xl" src="assets/images/sobre-crianca-sorrindo.jpg">
-</div>
-<div class="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-slate-50 dark:bg-slate-950 w-full py-12 border-t border-slate-200/50 dark:border-slate-800/50">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-8">
-<div class="space-y-4">
-<div class="font-['Plus_Jakarta_Sans'] font-bold text-lg text-blue-800 dark:text-blue-300" style="">Pró Família</div>
-<p class="text-slate-500 font-['Lexend'] text-sm leading-relaxed" style="">
-                    Transformando realidades através da educação e do afeto na comunidade da Mangueira.
+  </head>
+  <body
+    class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container"
+  >
+    <!-- TopNavBar -->
+    <header
+      class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md editorial-shadow"
+    >
+      <nav
+        class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20"
+      >
+        <div
+          class="text-2xl font-bold text-blue-800 dark:text-blue-300 font-headline tracking-tight"
+        >
+          Pró Família
+        </div>
+        <div
+          class="hidden md:flex items-center gap-8 font-headline font-semibold text-sm"
+        >
+          <a
+            class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors"
+            href="home.html"
+            >Início</a
+          >
+          <a
+            class="text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 dark:border-blue-400 pb-1"
+            href="sobreNos.html"
+            >Nossa História</a
+          >
+          <a
+            class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors"
+            href="#"
+            >A Escola</a
+          >
+          <a
+            class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors"
+            href="index.html"
+            >Projetos</a
+          >
+          <a
+            class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors"
+            href="comoAjudar.html"
+            >Como Ajudar</a
+          >
+        </div>
+        <button
+          class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm hover:scale-95 transition-all duration-200"
+          style=""
+        >
+          Doar Agora
+        </button>
+      </nav>
+    </header>
+    <main class="pt-20">
+      <!-- Hero Section -->
+      <section
+        class="relative min-h-[716px] flex items-center overflow-hidden bg-surface-container-low"
+      >
+        <div
+          class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10"
+        >
+          <div class="space-y-6">
+            <span
+              class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label text-xs font-bold tracking-widest uppercase"
+              style=""
+              >30 ANOS DE LEGADO</span
+            >
+            <h1
+              class="font-headline text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.1] tracking-tight"
+              style=""
+            >
+              Transformando vidas na
+              <span class="text-primary" style="">Mangueira</span>.
+            </h1>
+            <p
+              class="text-on-surface-variant text-lg md:text-xl max-w-lg leading-relaxed"
+              style=""
+            >
+              Nossa jornada começou com um abraço e um desejo de cuidar. Conheça
+              a trajetória que transformou um grupo de apoio em uma escola de
+              futuro.
+            </p>
+          </div>
+          <div class="relative">
+            <div
+              class="aspect-square rounded-[2rem] overflow-hidden rotate-3 editorial-shadow"
+            >
+              <img
+                alt="Criança sorridente em uma comunidade vibrante com luz quente da tarde e prédios coloridos ao fundo."
+                class="w-full h-full object-cover"
+                src="assets/images/sobre-hero-crianca.jpg"
+              />
+            </div>
+            <div
+              class="absolute -bottom-8 -left-8 aspect-square w-48 rounded-xl overflow-hidden -rotate-6 border-8 border-white editorial-shadow hidden md:block"
+            >
+              <img
+                alt="Fotografia nostálgica de um grupo de mulheres sentadas em círculo compartilhando histórias em uma sala comunitária simples."
+                class="w-full h-full object-cover"
+                src="assets/images/sobre-mulheres-historico.jpg"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-highest/20 -skew-x-12 translate-x-1/2"
+        ></div>
+      </section>
+      <!-- Timeline Section -->
+      <section class="py-24 bg-surface">
+        <div class="max-w-5xl mx-auto px-8 relative">
+          <div
+            class="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 timeline-line -translate-x-1/2 opacity-30"
+          ></div>
+          <div class="space-y-32">
+            <!-- 1994: O Início -->
+            <div
+              class="relative flex flex-col md:flex-row items-center gap-8 md:gap-0"
+            >
+              <div class="md:w-1/2 md:pr-16 md:text-right order-2 md:order-1">
+                <h3
+                  class="font-headline text-4xl font-extrabold text-primary mb-4"
+                  style=""
+                >
+                  1994
+                </h3>
+                <h4
+                  class="font-headline text-2xl font-bold text-on-surface mb-4"
+                  style=""
+                >
+                  O Nascimento de um Propósito
+                </h4>
+                <p class="text-on-surface-variant leading-relaxed" style="">
+                  No coração da Mangueira, um pequeno grupo de apoio a gestantes
+                  começava a se reunir. O objetivo era simples, mas vital:
+                  oferecer dignidade e orientação para mães em situação de
+                  vulnerabilidade.
                 </p>
-</div>
-<div>
-<h5 class="font-headline font-bold text-on-surface mb-6" style="">Institucional</h5>
-<ul class="space-y-4 font-['Lexend'] text-sm">
-<li class="" style=""><a class="text-slate-500 hover:text-blue-600 hover:underline transition-all" href="#" style="">Transparência</a></li>
-<li class="" style=""><a class="text-slate-500 hover:text-blue-600 hover:underline transition-all" href="#" style="">Relatórios Anuais</a></li>
-<li class="" style=""><a class="text-slate-500 hover:text-blue-600 hover:underline transition-all" href="#" style="">Nossa Equipe</a></li>
-</ul>
-</div>
-<div>
-<h5 class="font-headline font-bold text-on-surface mb-6" style="">Ajuda</h5>
-<ul class="space-y-4 font-['Lexend'] text-sm">
-<li class="" style=""><a class="text-slate-500 hover:text-blue-600 hover:underline transition-all" href="#" style="">Como Ajudar</a></li>
-<li class="" style=""><a class="text-slate-500 hover:text-blue-600 hover:underline transition-all" href="#" style="">Seja Voluntário</a></li>
-<li class="" style=""><a class="text-slate-500 hover:text-blue-600 hover:underline transition-all" href="#" style="">Contato</a></li>
-</ul>
-</div>
-<div>
-<h5 class="font-headline font-bold text-on-surface mb-6" style="">Fale Conosco</h5>
-<p class="text-slate-500 font-['Lexend'] text-sm mb-4" style="">Rua da Alegria, Mangueira - Rio de Janeiro</p>
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-blue-700" style="">mail</span>
-<span class="material-symbols-outlined text-blue-700" style="">phone</span>
-<span class="material-symbols-outlined text-blue-700" style="">share</span>
-</div>
-</div>
-</div>
-<div class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-slate-200/30 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="text-slate-500 font-['Lexend'] text-sm">© 2025 Associação Pró Família — Transformando vidas na Mangueira.</p>
-<div class="flex gap-6">
-<a class="text-slate-500 text-xs hover:text-blue-600" href="#" style="">Privacidade</a>
-<a class="text-slate-500 text-xs hover:text-blue-600" href="#" style="">Termos de Uso</a>
-</div>
-</div>
-</footer>
-</body></html>
+              </div>
+              <div
+                class="absolute left-8 md:left-1/2 w-10 h-10 bg-primary rounded-full -translate-x-1/2 flex items-center justify-center text-white z-10 editorial-shadow"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;opsz&quot; 20"
+                  >volunteer_activism</span
+                >
+              </div>
+              <div class="md:w-1/2 md:pl-16 order-1 md:order-2">
+                <div
+                  class="rounded-2xl overflow-hidden editorial-shadow bg-surface-container-low p-4"
+                >
+                  <img
+                    alt="Encontro comunitário sob uma grande árvore, com tons nostálgicos de uma tarde de verão no Rio."
+                    class="rounded-xl w-full aspect-video object-cover"
+                    src="assets/images/sobre-inicio-1994.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 2005: Evolução -->
+            <div
+              class="relative flex flex-col md:flex-row items-center gap-8 md:gap-0"
+            >
+              <div class="md:w-1/2 md:pr-16 order-1">
+                <div
+                  class="rounded-2xl overflow-hidden editorial-shadow bg-surface-container-low p-4"
+                >
+                  <img
+                    alt="Grupo de crianças sentadas em um tapete colorido, atentas a uma professora lendo uma história."
+                    class="rounded-xl w-full aspect-video object-cover"
+                    src="assets/images/sobre-ampliacao-2005.jpg"
+                  />
+                </div>
+              </div>
+              <div
+                class="absolute left-8 md:left-1/2 w-10 h-10 bg-secondary rounded-full -translate-x-1/2 flex items-center justify-center text-white z-10 editorial-shadow"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;opsz&quot; 20"
+                  >groups</span
+                >
+              </div>
+              <div class="md:w-1/2 md:pl-16 order-2">
+                <h3
+                  class="font-headline text-4xl font-extrabold text-secondary mb-4"
+                  style=""
+                >
+                  2005
+                </h3>
+                <h4
+                  class="font-headline text-2xl font-bold text-on-surface mb-4"
+                  style=""
+                >
+                  Ampliação do Olhar
+                </h4>
+                <p class="text-on-surface-variant leading-relaxed" style="">
+                  Percebemos que o cuidado com a mãe precisava se estender ao
+                  desenvolvimento integral da criança. Iniciamos as primeiras
+                  oficinas socioeducativas e reforço escolar no contraturno.
+                </p>
+              </div>
+            </div>
+            <!-- 2018: A Escola -->
+            <div
+              class="relative flex flex-col md:flex-row items-center gap-8 md:gap-0"
+            >
+              <div class="md:w-1/2 md:pr-16 md:text-right order-2 md:order-1">
+                <h3
+                  class="font-headline text-4xl font-extrabold text-tertiary mb-4"
+                  style=""
+                >
+                  2018
+                </h3>
+                <h4
+                  class="font-headline text-2xl font-bold text-on-surface mb-4"
+                  style=""
+                >
+                  O Sonho ganha Paredes
+                </h4>
+                <p class="text-on-surface-variant leading-relaxed" style="">
+                  Inauguramos nossa sede própria, estruturada para funcionar
+                  como uma escola de educação infantil de excelência. De um
+                  pequeno grupo, passamos a impactar dezenas de famílias
+                  diariamente.
+                </p>
+              </div>
+              <div
+                class="absolute left-8 md:left-1/2 w-10 h-10 bg-tertiary rounded-full -translate-x-1/2 flex items-center justify-center text-white z-10 editorial-shadow"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;opsz&quot; 20"
+                  >school</span
+                >
+              </div>
+              <div class="md:w-1/2 md:pl-16 order-1 md:order-2">
+                <div
+                  class="rounded-2xl overflow-hidden editorial-shadow bg-surface-container-low p-4"
+                >
+                  <img
+                    alt="Arquitetura moderna e minimalista da escola com grandes janelas, paredes brancas e uma pequena horta na frente."
+                    class="rounded-xl w-full aspect-video object-cover"
+                    src="assets/images/sobre-escola-2018.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Hoje -->
+            <div
+              class="relative flex flex-col md:flex-row items-center gap-8 md:gap-0"
+            >
+              <div class="md:w-1/2 md:pr-16 order-1">
+                <div class="grid grid-cols-2 gap-4">
+                  <div
+                    class="bg-primary-container p-6 rounded-2xl flex flex-col justify-center"
+                  >
+                    <span
+                      class="font-headline text-4xl font-extrabold text-on-primary-container"
+                      style=""
+                      >104</span
+                    >
+                    <span
+                      class="font-label text-xs uppercase font-bold text-on-primary-fixed-variant"
+                      style=""
+                      >Alunos Ativos</span
+                    >
+                  </div>
+                  <div
+                    class="bg-tertiary-container p-6 rounded-2xl flex flex-col justify-center"
+                  >
+                    <span
+                      class="font-headline text-4xl font-extrabold text-on-tertiary-container"
+                      style=""
+                      >30</span
+                    >
+                    <span
+                      class="font-label text-xs uppercase font-bold text-on-tertiary-fixed-variant"
+                      style=""
+                      >Anos de História</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="absolute left-8 md:left-1/2 w-14 h-14 bg-on-surface rounded-full -translate-x-1/2 flex items-center justify-center text-white z-10 editorial-shadow"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;opsz&quot; 28"
+                  >star</span
+                >
+              </div>
+              <div class="md:w-1/2 md:pl-16 order-2">
+                <h3
+                  class="font-headline text-4xl font-extrabold text-on-surface mb-4"
+                  style=""
+                >
+                  Hoje
+                </h3>
+                <h4
+                  class="font-headline text-2xl font-bold text-on-surface mb-4"
+                  style=""
+                >
+                  Multiplicando Futuros
+                </h4>
+                <p class="text-on-surface-variant leading-relaxed" style="">
+                  Atualmente, atendemos 104 crianças em período integral,
+                  oferecendo educação, alimentação, saúde e, acima de tudo, um
+                  ambiente seguro para crescer e sonhar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Values/Bento Grid Section -->
+      <section class="py-24 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-8">
+          <div class="mb-16 text-center max-w-2xl mx-auto">
+            <h2
+              class="font-headline text-4xl font-extrabold text-on-surface mb-6"
+              style=""
+            >
+              O que nos move diariamente
+            </h2>
+            <p class="text-on-surface-variant" style="">
+              Princípios que guiam cada passo da Pró Família desde 1994.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6 h-auto md:h-[600px]"
+          >
+            <div
+              class="md:col-span-2 bg-surface-container-lowest p-10 rounded-[2rem] flex flex-col justify-end relative overflow-hidden group"
+            >
+              <div class="absolute top-0 right-0 p-8">
+                <span
+                  class="material-symbols-outlined text-6xl text-primary opacity-10 group-hover:opacity-20 transition-opacity"
+                  style=""
+                  >favorite</span
+                >
+              </div>
+              <h3
+                class="font-headline text-3xl font-bold text-on-surface mb-4"
+                style=""
+              >
+                Afeto como Base
+              </h3>
+              <p class="text-on-surface-variant text-lg" style="">
+                Acreditamos que nenhuma educação é efetiva sem o acolhimento
+                emocional. Aqui, cada criança é vista e ouvida.
+              </p>
+            </div>
+            <div
+              class="bg-primary text-on-primary p-10 rounded-[2rem] flex flex-col justify-between"
+            >
+              <span class="material-symbols-outlined text-4xl" style=""
+                >local_library</span
+              >
+              <div>
+                <h3 class="font-headline text-2xl font-bold mb-2" style="">
+                  Excelência
+                </h3>
+                <p class="text-primary-container/80 text-sm" style="">
+                  Oferecemos o melhor em infraestrutura e pedagogia para quem
+                  mais precisa.
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-secondary-container p-10 rounded-[2rem] flex flex-col justify-between"
+            >
+              <span
+                class="material-symbols-outlined text-4xl text-on-secondary-container"
+                style=""
+                >eco</span
+              >
+              <div>
+                <h3
+                  class="font-headline text-2xl font-bold text-on-secondary-container mb-2"
+                  style=""
+                >
+                  Sustentabilidade
+                </h3>
+                <p class="text-on-secondary-container/70 text-sm" style="">
+                  Cuidamos do hoje pensando no amanhã da nossa comunidade e do
+                  planeta.
+                </p>
+              </div>
+            </div>
+            <div
+              class="md:col-span-2 bg-white p-10 rounded-[2rem] flex flex-col justify-center relative overflow-hidden"
+            >
+              <div class="flex items-center gap-6">
+                <div class="h-20 w-1 bg-tertiary rounded-full"></div>
+                <div>
+                  <h3
+                    class="font-headline text-3xl font-bold text-on-surface mb-2"
+                    style=""
+                  >
+                    Impacto Comunitário
+                  </h3>
+                  <p class="text-on-surface-variant text-lg" style="">
+                    Nossa história se confunde com a história da Mangueira.
+                    Somos parte da solução local.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-8 relative">
+          <div
+            class="bg-on-surface text-white rounded-[3rem] p-12 md:p-24 relative overflow-hidden flex flex-col md:flex-row items-center gap-12"
+          >
+            <div class="relative z-10 md:w-2/3">
+              <h2
+                class="font-headline text-4xl md:text-6xl font-extrabold mb-8 leading-tight"
+                style=""
+              >
+                Faça parte dos próximos
+                <span class="text-tertiary-fixed" style="">30 anos</span>.
+              </h2>
+              <p
+                class="text-surface-container-highest/80 text-xl mb-10 max-w-xl"
+                style=""
+              >
+                Sua doação garante que 104 crianças continuem tendo acesso a uma
+                educação transformadora. Ajude-nos a escrever o próximo
+                capítulo.
+              </p>
+              <div class="flex flex-wrap gap-4">
+                <button
+                  class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold hover:scale-105 transition-transform flex items-center gap-2"
+                  style=""
+                >
+                  <span class="material-symbols-outlined" style=""
+                    >favorite</span
+                  >
+                  Quero Contribuir
+                </button>
+                <button
+                  class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-full font-headline font-bold hover:bg-white/20 transition-colors"
+                  style=""
+                >
+                  Conhecer Projetos
+                </button>
+              </div>
+            </div>
+            <div class="md:w-1/3 relative z-10 flex justify-center">
+              <div
+                class="w-64 h-64 rounded-full bg-tertiary/20 animate-pulse absolute -z-10 blur-3xl"
+              ></div>
+              <img
+                alt="Retrato de criança rindo alegremente, com iluminação quente."
+                class="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full border-4 border-tertiary-fixed shadow-2xl"
+                src="assets/images/sobre-crianca-sorrindo.jpg"
+              />
+            </div>
+            <div
+              class="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-slate-50 dark:bg-slate-950 w-full py-12 border-t border-slate-200/50 dark:border-slate-800/50"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-8">
+        <div class="space-y-4">
+          <div
+            class="font-['Plus_Jakarta_Sans'] font-bold text-lg text-blue-800 dark:text-blue-300"
+            style=""
+          >
+            Pró Família
+          </div>
+          <p
+            class="text-slate-500 font-['Lexend'] text-sm leading-relaxed"
+            style=""
+          >
+            Transformando realidades através da educação e do afeto na
+            comunidade da Mangueira.
+          </p>
+        </div>
+        <div>
+          <h5 class="font-headline font-bold text-on-surface mb-6" style="">
+            Institucional
+          </h5>
+          <ul class="space-y-4 font-['Lexend'] text-sm">
+            <li class="" style="">
+              <a
+                class="text-slate-500 hover:text-blue-600 hover:underline transition-all"
+                href="#"
+                style=""
+                >Transparência</a
+              >
+            </li>
+            <li class="" style="">
+              <a
+                class="text-slate-500 hover:text-blue-600 hover:underline transition-all"
+                href="#"
+                style=""
+                >Relatórios Anuais</a
+              >
+            </li>
+            <li class="" style="">
+              <a
+                class="text-slate-500 hover:text-blue-600 hover:underline transition-all"
+                href="#"
+                style=""
+                >Nossa Equipe</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-headline font-bold text-on-surface mb-6" style="">
+            Ajuda
+          </h5>
+          <ul class="space-y-4 font-['Lexend'] text-sm">
+            <li class="" style="">
+              <a
+                class="text-slate-500 hover:text-blue-600 hover:underline transition-all"
+                href="#"
+                style=""
+                >Como Ajudar</a
+              >
+            </li>
+            <li class="" style="">
+              <a
+                class="text-slate-500 hover:text-blue-600 hover:underline transition-all"
+                href="#"
+                style=""
+                >Seja Voluntário</a
+              >
+            </li>
+            <li class="" style="">
+              <a
+                class="text-slate-500 hover:text-blue-600 hover:underline transition-all"
+                href="#"
+                style=""
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-headline font-bold text-on-surface mb-6" style="">
+            Fale Conosco
+          </h5>
+          <p class="text-slate-500 font-['Lexend'] text-sm mb-4" style="">
+            Rua da Alegria, Mangueira - Rio de Janeiro
+          </p>
+          <div class="flex gap-4">
+            <span class="material-symbols-outlined text-blue-700" style=""
+              >mail</span
+            >
+            <span class="material-symbols-outlined text-blue-700" style=""
+              >phone</span
+            >
+            <span class="material-symbols-outlined text-blue-700" style=""
+              >share</span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-slate-200/30 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <p class="text-slate-500 font-['Lexend'] text-sm">
+          © 2025 Associação Pró Família — Transformando vidas na Mangueira.
+        </p>
+        <div class="flex gap-6">
+          <a
+            class="text-slate-500 text-xs hover:text-blue-600"
+            href="#"
+            style=""
+            >Privacidade</a
+          >
+          <a
+            class="text-slate-500 text-xs hover:text-blue-600"
+            href="#"
+            style=""
+            >Termos de Uso</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
