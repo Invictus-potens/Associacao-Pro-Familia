@@ -10,6 +10,24 @@
       content="Saiba como apoiar a Associação Pró Família: doação financeira, voluntariado ou doação de itens para crianças e famílias da Mangueira."
     />
     <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Lexend:wght@300;400;500;600&amp;display=swap"
       rel="stylesheet"
     />
@@ -96,14 +114,14 @@
   <body
     class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container"
   >
-    <!-- TopNavBar -->
-    <nav
-      class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-[0_16px_32px_-12px_rgba(0,55,72,0.06)] tonal-layering-no-border"
+    <!-- Top Navigation Bar -->
+    <header
+      class="fixed top-0 w-full z-50 glass-nav shadow-[0_16px_32px_-12px_rgba(0,55,72,0.06)]"
     >
       <div
         class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20"
       >
-         <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3">
           <img
             alt="Logo Pró Família"
             class="h-12 w-auto"
@@ -115,37 +133,35 @@
             Pró Família
           </div>
         </div>
-        <div
-          class="hidden md:flex items-center space-x-8 font-headline font-semibold tracking-tight text-sm"
-        >
+        <nav class="hidden md:flex gap-8 items-center">
           <a
-            class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors"
+            class="font-headline font-semibold text-slate-600 hover:text-blue-600 transition-colors"
             href="index.html"
             >Início</a
           >
           <a
-            class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors"
+            class="font-headline font-semibold text-slate-600 hover:text-blue-600 transition-colors"
             href="sobre.html"
             >Nossa História</a
           >
           <a
-            class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors"
+            class="font-headline font-semibold text-slate-600 hover:text-blue-600 transition-colors"
             href="projetos.html"
             >Projetos</a
           >
           <a
-            class="text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 dark:border-blue-400 pb-1"
+            class="font-headline font-semibold text-blue-700 border-b-2 border-blue-700 pb-1"
             href="ajuda.html"
             >Como Ajudar</a
           >
-        </div>
+        </nav>
         <button
-          class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm hover:scale-95 duration-200 shadow-lg shadow-primary/20"
+          class="bg-primary hover:bg-primary-dim text-on-primary px-6 py-2.5 rounded-full font-headline font-bold transition-all scale-100 hover:scale-105 active:scale-95 shadow-lg"
         >
           Doar Agora
         </button>
       </div>
-    </nav>
+    </header>
     <main class="pt-20">
       <!-- Hero Section: Editorial Inspiration -->
       <section class="relative overflow-hidden py-24 lg:py-32 bg-surface">
@@ -195,125 +211,75 @@
             <h2
               class="font-headline text-4xl font-extrabold text-on-surface mb-4"
             >
-              Doação Financeira
+              Doação Financeira (Placeholder)
             </h2>
             <p class="text-on-surface-variant font-body">
               Escolha um valor e veja o impacto real da sua contribuição.
             </p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Impact Card 1 -->
-            <div
-              class="bg-surface-container-lowest p-8 rounded-3xl hover:translate-y-[-8px] transition-all duration-300 group"
-            >
-              <div
-                class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center mb-8"
-              >
-                <span class="material-symbols-outlined text-primary text-3xl"
-                  >restaurant</span
-                >
-              </div>
-              <h3
-                class="text-4xl font-headline font-extrabold text-on-surface mb-2"
-              >
-                R$ 50
-              </h3>
-              <p class="text-on-surface-variant mb-8 leading-relaxed">
-                Garante refeições nutritivas para um aluno durante uma semana
-                inteira de aulas.
-              </p>
-              <button
-                class="w-full py-4 rounded-full bg-surface-container-high font-headline font-bold text-on-surface hover:bg-primary hover:text-on-primary transition-colors"
-              >
-                Doar este valor
-              </button>
-            </div>
-            <!-- Impact Card 2 - Highlighted -->
-            <div
-              class="bg-primary text-on-primary p-8 rounded-3xl scale-105 shadow-xl shadow-primary/20 relative overflow-hidden group"
-            >
-              <div
-                class="absolute top-4 right-4 bg-tertiary text-on-tertiary px-3 py-1 rounded-full text-xs font-bold font-label"
-              >
-                MAIS POPULAR
-              </div>
-              <div
-                class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-8"
-              >
-                <span class="material-symbols-outlined text-white text-3xl"
-                  >school</span
-                >
-              </div>
-              <h3 class="text-4xl font-headline font-extrabold text-white mb-2">
-                R$ 150
-              </h3>
-              <p class="text-white/80 mb-8 leading-relaxed">
-                Custeia o material escolar completo e uniforme para um estudante
-                do ensino fundamental.
-              </p>
-              <button
-                class="w-full py-4 rounded-full bg-white text-primary font-headline font-bold hover:scale-95 transition-transform"
-              >
-                Doar este valor
-              </button>
-            </div>
-            <!-- Impact Card 3 -->
-            <div
-              class="bg-surface-container-lowest p-8 rounded-3xl hover:translate-y-[-8px] transition-all duration-300 group"
-            >
-              <div
-                class="w-14 h-14 bg-tertiary-container rounded-2xl flex items-center justify-center mb-8"
-              >
-                <span class="material-symbols-outlined text-tertiary text-3xl"
-                  >diversity_1</span
-                >
-              </div>
-              <h3
-                class="text-4xl font-headline font-extrabold text-on-surface mb-2"
-              >
-                R$ 300
-              </h3>
-              <p class="text-on-surface-variant mb-8 leading-relaxed">
-                Apoia o acompanhamento psicológico e social de uma família
-                inteira por um mês.
-              </p>
-              <button
-                class="w-full py-4 rounded-full bg-surface-container-high font-headline font-bold text-on-surface hover:bg-primary hover:text-on-primary transition-colors"
-              >
-                Doar este valor
-              </button>
-            </div>
-          </div>
-          <!-- Custom Donation Field -->
           <div
-            class="mt-12 bg-white/40 backdrop-blur-sm p-8 rounded-[2.5rem] flex flex-col md:flex-row items-center justify-between gap-8"
+            class="bg-surface-container-lowest border border-outline-variant/30 rounded-[2rem] p-8 md:p-10 shadow-sm"
           >
-            <div class="flex items-center gap-6">
-              <span
-                class="material-symbols-outlined text-4xl text-primary"
-                data-weight="fill"
+            <div class="flex items-center gap-3 mb-6">
+              <span class="material-symbols-outlined text-primary"
                 >volunteer_activism</span
               >
-              <div>
-                <h4 class="font-headline font-bold text-xl">Outros Valores</h4>
-                <p class="text-sm text-on-surface-variant">
-                  Toda ajuda é bem-vinda e faz a diferença.
+              <h3 class="font-headline text-2xl font-extrabold text-on-surface">
+                Informações para Doação
+              </h3>
+            </div>
+            <p class="text-on-surface-variant mb-6">
+              Sua contribuicao ajuda diretamente nas acoes com criancas e
+              familias.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-surface-container-low p-6 rounded-2xl">
+                <p
+                  class="text-xs uppercase tracking-widest font-bold text-on-surface-variant mb-2"
+                >
+                  Chave Pix
+                </p>
+                <p
+                  class="font-headline text-lg font-bold text-on-surface break-all"
+                  id="pixKey"
+                >
+                  pix@profamilia.org.br (Placeholder)
+                </p>
+                <button
+                  class="mt-4 bg-primary text-on-primary px-5 py-2.5 rounded-full font-bold hover:bg-primary-dim transition-colors"
+                  onclick="copyPixKey()"
+                  type="button"
+                >
+                  Copiar chave Pix
+                </button>
+                <p class="text-xs text-tertiary mt-3 hidden" id="pixCopyFeedback">
+                  Chave copiada com sucesso.
+                </p>
+              </div>
+              <div class="bg-surface-container-low p-6 rounded-2xl">
+                <p
+                  class="text-xs uppercase tracking-widest font-bold text-on-surface-variant mb-2"
+                >
+                  Contato
+                </p>
+                <a
+                  class="font-headline text-lg font-bold text-primary hover:underline break-all"
+                  href="mailto:contato@profamilia.org.br"
+                >
+                  contato@profamilia.org.br (Placeholder)
+                </a>
+                <p class="text-sm text-on-surface-variant mt-4">
+                  Em caso de duvidas, envie o comprovante para confirmacao da
+                  doacao.
                 </p>
               </div>
             </div>
-            <div class="flex w-full md:w-auto gap-4">
-              <input
-                class="flex-1 md:w-48 bg-surface-container-lowest border-none rounded-full px-6 py-4 focus:ring-2 focus:ring-primary outline-none font-headline font-bold"
-                placeholder="R$ 0,00"
-                type="number"
-              />
-              <button
-                class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold hover:bg-primary-dim transition-colors"
-              >
-                Contribuir
-              </button>
-            </div>
+            <p class="text-xs text-on-surface-variant mt-6">
+              Importante: confira sempre o nome do recebedor antes de concluir
+              o pagamento.
+            </p>
           </div>
+          
         </div>
       </section>
       <!-- Volunteering Section: Interactive Tiles -->
@@ -321,7 +287,7 @@
         <div class="max-w-7xl mx-auto px-8">
           <div class="text-center max-w-3xl mx-auto mb-20">
             <h2 class="font-headline text-4xl font-extrabold mb-6">
-              Doe seu Tempo e Talento
+              Doe seu Tempo e Talento (Placeholder)
             </h2>
             <p class="text-on-surface-variant">
               O voluntariado é a alma da nossa escola. Temos diversas áreas onde
@@ -336,7 +302,7 @@
               <img
                 alt="Voluntário ensinando matemática para um grupo de crianças sorridentes em uma sala de aula moderna."
                 class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                src="assets/images/ajudar-voluntario-educacao.jpg"
+                src="assets/images/gatinho.jpg"
               />
               <div
                 class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent p-8 flex flex-col justify-end"
@@ -361,7 +327,7 @@
               <img
                 alt="Médica conversando com uma mãe e seu filho em uma clínica com iluminação suave."
                 class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                src="assets/images/ajudar-voluntario-saude.jpg"
+                src="assets/images/gatinho.jpg"
               />
               <div
                 class="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/20 to-transparent p-8 flex flex-col justify-end"
@@ -386,7 +352,7 @@
               <img
                 alt="Voluntários organizando um festival comunitário com decorações coloridas e barracas de comida."
                 class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                src="assets/images/ajudar-voluntario-eventos.jpg"
+                src="assets/images/gatinho.jpg"
               />
               <div
                 class="absolute inset-0 bg-gradient-to-t from-tertiary/90 via-tertiary/20 to-transparent p-8 flex flex-col justify-end"
@@ -411,7 +377,7 @@
               <img
                 alt="Espaço de trabalho profissional com laptop e documentos sendo organizados por um voluntário concentrado."
                 class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                src="assets/images/ajudar-voluntario-admin.jpg"
+                src="assets/images/gatinho.jpg"
               />
               <div
                 class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/20 to-transparent p-8 flex flex-col justify-end"
@@ -538,7 +504,7 @@
                 <div>
                   <p class="font-bold">Ponto de Coleta:</p>
                   <p class="text-sm text-on-surface-variant">
-                    Rua da Escola, 123 - Mangueira, Rio de Janeiro
+                    Rua da Escola, 123 - Mangueira, Ribeirão Preto
                   </p>
                 </div>
               </div>
@@ -562,122 +528,174 @@
           </div>
         </div>
       </section>
-      <!-- Growth Progress Track: Signature Component -->
-      <section class="py-20 bg-surface">
-        <div
-          class="max-w-4xl mx-auto px-8 bg-surface-container-highest/30 p-12 rounded-[3rem] text-center border border-outline-variant/10"
-        >
-          <h3 class="font-headline text-2xl font-bold mb-4">
-            Meta Mensal de Arrecadação
-          </h3>
-          <p class="text-on-surface-variant mb-10">
-            Estamos em 65% da nossa meta para manter o projeto de música ativo
-            este mês.
-          </p>
-          <div
-            class="w-full h-4 bg-secondary-container rounded-full overflow-hidden mb-4"
-          >
-            <div
-              class="h-full w-[65%] bg-gradient-to-r from-primary to-tertiary rounded-full"
-            ></div>
-          </div>
-          <div
-            class="flex justify-between font-label text-xs font-bold text-on-surface-variant"
-          >
-            <span>ARRECADADO: R$ 19.500</span>
-            <span>META: R$ 30.000</span>
-          </div>
-        </div>
-      </section>
     </main>
     <!-- Footer -->
-    <footer
-      class="bg-slate-50 dark:bg-slate-950 w-full py-12 border-t border-slate-200/50 dark:border-slate-800/50"
-    >
-      <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer class="bg-slate-50 border-t border-slate-200/50 py-20">
+      <div
+        class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12"
+      >
         <div class="col-span-1 md:col-span-1">
-          <div
-            class="font-['Plus_Jakarta_Sans'] font-bold text-lg text-blue-800 dark:text-blue-300 mb-4"
-          >
+          <div class="font-headline font-bold text-2xl text-blue-800 mb-6">
             Pró Família
           </div>
-          <p class="font-['Lexend'] text-sm text-slate-500 leading-relaxed">
-            Transformando realidades através da educação e do afeto no coração
-            da Mangueira.
+          <p class="text-slate-500 font-body text-sm leading-relaxed mb-6">
+            Desde 1994, trabalhando pela inclusão social e educação de crianças
+            e adolescentes na Mangueira, Ribeirão Preto.
           </p>
+          <div class="flex gap-4">
+            <a
+              class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all"
+              href="#"
+            >
+              <span class="material-symbols-outlined text-lg">share</span>
+            </a>
+            <a
+              class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all"
+              href="#"
+            >
+              <span class="material-symbols-outlined text-lg"
+                >alternate_email</span
+              >
+            </a>
+          </div>
         </div>
-        <div>
-          <h4 class="font-bold text-blue-700 mb-4 text-sm font-headline">
-            Navegação
+        <div class="space-y-4">
+          <h4
+            class="font-headline font-bold text-slate-800 uppercase tracking-widest text-xs mb-6"
+          >
+            Institucional
           </h4>
-          <ul class="space-y-2 font-['Lexend'] text-sm">
+          <ul class="space-y-3">
             <li>
               <a
-                class="text-slate-500 hover:text-blue-600 transition-all hover:underline"
-                href="#"
-                >Nossa História</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-slate-500 hover:text-blue-600 transition-all hover:underline"
-                href="#"
-                >Projetos</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-slate-500 hover:text-blue-600 transition-all hover:underline"
+                class="text-slate-500 hover:text-blue-600 transition-all text-sm"
                 href="#"
                 >Transparência</a
               >
             </li>
             <li>
               <a
-                class="text-slate-500 hover:text-blue-600 transition-all hover:underline"
+                class="text-slate-500 hover:text-blue-600 transition-all text-sm"
                 href="#"
                 >Relatórios</a
               >
             </li>
+            <li>
+              <a
+                class="text-slate-500 hover:text-blue-600 transition-all text-sm"
+                href="#"
+                >Nossa Equipe</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-500 hover:text-blue-600 transition-all text-sm"
+                href="#"
+                >Editais</a
+              >
+            </li>
           </ul>
         </div>
-        <div>
-          <h4 class="font-bold text-blue-700 mb-4 text-sm font-headline">
+        <div class="space-y-4">
+          <h4
+            class="font-headline font-bold text-slate-800 uppercase tracking-widest text-xs mb-6"
+          >
+            Explore
+          </h4>
+          <ul class="space-y-3">
+            <li>
+              <a
+                class="text-slate-500 hover:text-blue-600 transition-all text-sm"
+                href="#"
+                >Projetos</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-500 hover:text-blue-600 transition-all text-sm"
+                href="#"
+                >Histórias de Impacto</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-500 hover:text-blue-600 transition-all text-sm"
+                href="#"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-500 hover:text-blue-600 transition-all text-sm"
+                href="#"
+                >Galeria</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <h4
+            class="font-headline font-bold text-slate-800 uppercase tracking-widest text-xs mb-6"
+          >
             Contato
           </h4>
-          <ul class="space-y-2 font-['Lexend'] text-sm">
-            <li class="text-slate-500">contato@profamilia.org.br</li>
-            <li class="text-slate-500">(21) 99999-9999</li>
-            <li class="text-slate-500">Mangueira, Rio de Janeiro</li>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3 text-sm text-slate-500">
+              <span class="material-symbols-outlined text-sm mt-0.5"
+                >location_on</span
+              >
+              Mangueira, Ribeirão Preto - SP
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-500">
+              <span class="material-symbols-outlined text-sm mt-0.5">call</span>
+              +55 (16) 98148-9448
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-500">
+              <span class="material-symbols-outlined text-sm mt-0.5">mail</span>
+              contato@profamilia.org.br
+            </li>
           </ul>
-        </div>
-        <div>
-          <h4 class="font-bold text-blue-700 mb-4 text-sm font-headline">
-            Redes Sociais
-          </h4>
-          <div class="flex gap-4">
-            <a
-              class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all"
-              href="#"
-              ><span class="material-symbols-outlined text-sm"
-                >favorite</span
-              ></a
-            >
-            <a
-              class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all"
-              href="#"
-              ><span class="material-symbols-outlined text-sm">share</span></a
-            >
-          </div>
         </div>
       </div>
       <div
-        class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-slate-200/50 text-center"
+        class="max-w-7xl mx-auto px-8 mt-20 pt-8 border-t border-slate-200/50 flex flex-col md:flex-row justify-between items-center gap-4"
       >
-        <p class="font-['Lexend'] text-xs text-slate-400">
-          © 2025 Associação Pró Família — Transformando vidas na Mangueira.
+        <p class="font-body text-sm text-slate-400">
+          © 2025 Associação Pró Família — Transformando vidas em Ribeirão Preto.
         </p>
+        <div class="flex gap-8">
+          <a class="text-slate-400 hover:underline text-xs" href="#"
+            >Privacidade</a
+          >
+          <a class="text-slate-400 hover:underline text-xs" href="#"
+            >Termos de Uso</a
+          >
+          <a class="text-slate-400 hover:underline text-xs" href="#">Cookies</a>
+        </div>
       </div>
     </footer>
+    <script>
+      function copyPixKey() {
+        const keyElement = document.getElementById("pixKey");
+        const feedbackElement = document.getElementById("pixCopyFeedback");
+        if (!keyElement) return;
+
+        const key = keyElement.textContent.trim();
+        navigator.clipboard
+          .writeText(key)
+          .then(() => {
+            if (!feedbackElement) return;
+            feedbackElement.classList.remove("hidden");
+            setTimeout(() => {
+              feedbackElement.classList.add("hidden");
+            }, 1800);
+          })
+          .catch(() => {
+            if (!feedbackElement) return;
+            feedbackElement.textContent = "Nao foi possivel copiar. Copie manualmente.";
+            feedbackElement.classList.remove("hidden");
+          });
+      }
+    </script>
   </body>
 </html>
